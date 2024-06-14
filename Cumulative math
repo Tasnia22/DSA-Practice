@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int arr[100],cu[100],i,n,sum=0;
+    printf("Enter the number of elements in an array:  ");
+    scanf("%d",&n);
+    printf("Enter the value of array");
+    for(i=0;i<n;i++)
+    {
+
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        sum+=arr[i];
+        cu[i]=sum;
+        }
+        printf("Cumulative sum\n");
+
+        for(i=0;i<n;i++)
+        {
+            printf("%d \n",cu[i]);
+        }
+        return 0;
+}
